@@ -32,11 +32,12 @@ public class Aplicacao {
             System.out.println("Digite o valor pretendido do candidato " + candidatos[i] );
             double valorPretendido = scanner.nextDouble();
 
-            if (valorPretendido > salarioBase){
+            if (valorPretendido < salarioBase){
                 selecionados.add(candidatos[i]);
             }
         }
 
         System.out.println("Candidatos selecionados: " + selecionados);
+
     }
 }
